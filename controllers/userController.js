@@ -1,7 +1,7 @@
 const express = require('express');
 var router = express.Router();
-const mongoose = require('mongoose');
-var user = express('./models/user')
+var user = require('../models/user')
+var order = require('../models/order')
 
 router.get('/data', (req, res) => {
     user.aggregate([
